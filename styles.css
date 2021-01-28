@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+}
+li a:hover {
+    text-decoration: underline;
+}
+.cropper {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transform: scale(0.35);
+    top: -20px;
+    margin-left: -5px;
+}
+#pfp {
+   width: 200px;
+   margin-left: -55px;
+   position: relative;
+   bottom: 10px;
+
+}
+#grid {
+    width: 15px;
+    position: relative;
+    top: 4px;
+}
+#search, #mic {
+    width: 20px;
+}
+#form-group {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+.searchbox {
+    display: flex;
+    border: 0.5px solid rgb(224, 224, 224);
+    width: 550px;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+form {
+    width: 90%;
+}
+#searchbox {
+    width: 98%;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    padding: 1px;
+}
+#searchbox:focus {
+    outline: none;
+}
+.buttons {
+    margin-top: 20px;
+}
+.button {
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    padding: 7px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+.searchbox:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.10)
+}
+footer {
+    position: relative;
+}
+.footer {
+    display: flex;
+    background-color: rgba(182, 182, 182, 0.30);
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.left a, .right a{
+    text-decoration: none;
+    color: #70757a;
+    display: inline-block;
+    margin-right: 15px;
+}
+.left a:hover, .right a:hover {
+    text-decoration: underline;
+    /* color: saddlebrown; */
+}
+.left {
+    margin-left: 15px;
+}
+@media (max-width: 600px) {
+    .searchbox {
+        width: 400px;
+    }
+}
